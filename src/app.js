@@ -33,7 +33,6 @@ app.post('/register',async(req,res)=>{
         const password =req.body.password;
         const cnfrmpassword =req.body.cnfrmpassword;
         if(password===cnfrmpassword){
-
             const registerUser=new Register({
                 username:req.body.username,
                 password:req.body.password,
